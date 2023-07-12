@@ -7,3 +7,6 @@
 # Cache
 __pycache__
 .mypy_cache
+
+# Envrionment Variable
+.envrc

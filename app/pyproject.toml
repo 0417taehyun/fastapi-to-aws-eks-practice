@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "fastapi-to-aws-eks-practice"
+version = "1"
+description = "Deploy a simple FastAPI server to AWS EKS with GitHub Actions"
+authors = ["Taehyun Lee <0417taehyun@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.95.1"
+uvicorn = "^0.22.0"
+sqlalchemy = "^2.0.16"
+alembic = "^1.11.1"
+
+[tool.poetry.group.linter.dependencies]
+pre-commit = "^3.3.1"
+black = "^23.3.0"
+isort = "^5.12.0"
+mypy = "^1.3.0"
+
+[tool.black]
+line-length = 120
+target-version = ["py311"]
+
+[tool.isort]
+profile = "black"
+py_version = "311"
+skip = ["__init__.py"]
+multi_line_output = 3
+include_trailing_comma = true
+
+[tool.mypy]
+python_version = "3.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

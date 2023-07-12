@@ -1,0 +1,15 @@
+# Package
+*/.venv
+
+# pre-commit
+*/.pre-commit-config.yaml
+
+# Makefile
+*/Makefile
+
+# Cache
+*/__pycache__
+
+# Envrionment Variable
+*/.envrc
+*/.envrc.example
